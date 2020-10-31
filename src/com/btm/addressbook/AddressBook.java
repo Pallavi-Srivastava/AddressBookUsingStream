@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class AddressBook {
-	
+
 	static Scanner sc = new Scanner(System.in);
 
 	static List<UserDetails> lst = new ArrayList<UserDetails>();
@@ -88,16 +88,14 @@ public class AddressBook {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter city name : ");
 		String city = sc.nextLine();
-		lst.stream().filter(n -> n.getCity().equals(city)).forEach(i->System.out.println(i.getFirstName()));	
+		lst.stream().filter(n -> n.getCity().equals(city))
+				.forEach(i -> System.out.println("Data Found : " + i.getFirstName()));
 	}
 
-	
 	public static void main(String[] args) {
 		AddressBook oj = new AddressBook();
 		System.out.println("Welcome to Address Book Program..");
 		addPerson();
 		oj.searchByCity();
-	
 	}
-
 }
