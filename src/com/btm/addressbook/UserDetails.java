@@ -1,7 +1,6 @@
 package com.btm.addressbook;
 
 public class UserDetails {
-
 	private String firstName;
 	private String lastName;
 	private String address;

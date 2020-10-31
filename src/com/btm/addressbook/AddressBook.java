@@ -96,7 +96,6 @@ public class AddressBook {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter city name : ");
 		String city = sc.nextLine();
-		sc.close();
 		lst.stream().filter(n -> n.getCity().equals(city)).forEach(i -> System.out.println(i));
 	}
 
